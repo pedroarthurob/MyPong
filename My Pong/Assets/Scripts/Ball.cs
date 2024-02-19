@@ -10,11 +10,6 @@ public class Ball : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
-    {
-        ResetPosition();
-    }
-
     private void firstMove()
     {
         float x = Random.value;
