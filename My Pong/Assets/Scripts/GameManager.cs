@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
         atualizaScore();
         StartCoroutine(startBallMovWithDelay());
         gameOverPanel.SetActive(false);
+        player1Score = 0;
+        players2Score = 0;
     }
 
     IEnumerator startBallMovWithDelay()
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1.0f;
     }
 
     private string checkScores()

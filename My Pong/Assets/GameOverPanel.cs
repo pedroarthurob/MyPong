@@ -10,6 +10,6 @@ public class GameOverPanel : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadScene(0);
     }
 }

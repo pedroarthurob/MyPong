@@ -3,8 +3,8 @@ using UnityEngine;
 public class Player1 : MonoBehaviour
 {
     private Vector2 _direction;
-    private Rigidbody2D rig;
-    [SerializeField] private int speed;
+    protected Rigidbody2D rig;
+    [SerializeField] protected int speed;
 
     private void Start()
     {
